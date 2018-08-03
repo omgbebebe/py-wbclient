@@ -38,7 +38,7 @@ extensions = [
         include_dirs=["/usr/local/include", "/usr/local/include/samba4"],
         extra_compile_args=["-g", "-O0"],
         extra_link_args=[
-            "-L/usr/local/lib/samba", "-Wl,-rpath", "-Wl,/usr/local/lib/samba",
+            "-L/usr/local/lib/samba", "-L/usr/lib64/samba", "-Wl,-rpath", "-Wl,/usr/local/lib/samba",
             "-ltalloc", "-lsmbconf", "-lsmbd-base-samba4"
         ],
     ),
